@@ -1,11 +1,19 @@
-### 🚀 Practica 2 - Seminario de Lenguajes - Python
+### 🚀 Práctica 2 - Seminario de Lenguajes - Python
 
-#### 🏆 Simulación de competencia de cocina y ranking
+#### 📌 Descripcion
 
-Simulación de una competencia de cocina donde 5 participantes son evaluados por 3 jueces en cada ronda.  
-Cada juez otorga un puntaje del 1 al 10.  
-El puntaje de la ronda es la suma de los tres jueces.  
-La competencia se divide en 5 rondas, se actualiza la tabla de posiciones en cada ronda y luego se brinda la tabla final.
+Repositorio con los ejercicios correspondientes a la Práctica 2 de Seminario de Lenguajes - Python.  
+Los ejercicios están desarrollados en Jupyter Notebook y organizados en módulos de Python dentro de la carpeta `src`.
+
+---
+
+#### 🎯 Objetivos
+
+- Resolver problemas más complejos utilizando estructuras de datos.
+- Organizar el código en módulos reutilizables.
+- Utilizar Jupyter Notebook para la resolución y presentación de ejercicios.
+- Trabajar con entornos virtuales y dependencias.
+- Mantener una estructura de proyecto ordenada.
 
 ---
 
@@ -67,6 +75,12 @@ pip install -r requirements.txt
 
 ### ▶️ Ejecución
 
+Iniciar Jupyter Notebook:
 ```
-python src/concurso.py
+jupyter notebook
 ```
+Abrir la carpeta `notebooks` y ejecutar los ejercicios.
+
+## Autor
+
+Maximiliano Benet - Legajo N° 028532/4
