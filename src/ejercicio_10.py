@@ -34,8 +34,12 @@ def imprimir_tabla_final(stats):
     print("-" * 76)
     winner_of_competition = ordenada[0][0]
     
-    print("La ganadora de este torneo es: ")
-    print(winner_of_competition)
+    if winner_of_competition.endswith("a"):
+        print("La ganadora de este torneo es: ")
+        print(winner_of_competition)
+    else:
+        print("El ganador de este torneo es: ")
+        print(winner_of_competition)
     
 def concurso(rounds):
     
@@ -65,6 +69,83 @@ def concurso(rounds):
         
         
 if __name__ == "__main__":
+    rounds = [
+{
+'theme': 'Entrada',
+'scores': {
+'Valentina': {'judge_1': 8, 'judge_2': 7,
+'judge_3': 9},
+'Mateo': {'judge_1': 7, 'judge_2': 8,
+'judge_3': 7},
+'Camila': {'judge_1': 9, 'judge_2': 9,
+'judge_3': 8},
+'Santiago': {'judge_1': 6, 'judge_2': 7,
+'judge_3': 6},
+'Lucía': {'judge_1': 8, 'judge_2': 8,
+'judge_3': 8},
+}
+},
+{
+'theme': 'Plato principal',
+'scores': {
+'Valentina': {'judge_1': 9, 'judge_2': 9,
+'judge_3': 8},
+'Mateo': {'judge_1': 8, 'judge_2': 7,
+'judge_3': 9},
+'Camila': {'judge_1': 7, 'judge_2': 6,
+'judge_3': 7},
+'Santiago': {'judge_1': 9, 'judge_2': 8,
+'judge_3': 8},
+'Lucía': {'judge_1': 7, 'judge_2': 8,
+'judge_3': 7},
+}
+},
+{
+'theme': 'Postre',
+'scores': {
+'Valentina': {'judge_1': 7, 'judge_2': 8,
+'judge_3': 7},
+'Mateo': {'judge_1': 9, 'judge_2': 9,
+'judge_3': 8},
+'Camila': {'judge_1': 8, 'judge_2': 7,
+'judge_3': 9},
+'Santiago': {'judge_1': 7, 'judge_2': 7,
+'judge_3': 6},
+'Lucía': {'judge_1': 9, 'judge_2': 9,
+'judge_3': 9},
+}
+},
+{
+'theme': 'Cocina internacional',
+'scores': {
+'Valentina': {'judge_1': 8, 'judge_2': 9,
+'judge_3': 9},
+'Mateo': {'judge_1': 7, 'judge_2': 6,
+'judge_3': 7},
+'Camila': {'judge_1': 9, 'judge_2': 8,
+'judge_3': 8},
+'Santiago': {'judge_1': 8, 'judge_2': 9,
+'judge_3': 7},
+'Lucía': {'judge_1': 7, 'judge_2': 7,
+'judge_3': 8},
+}
+},
+{
+'theme': 'Final libre',
+'scores': {
+'Valentina': {'judge_1': 9, 'judge_2': 8,
+'judge_3': 9},
+'Mateo': {'judge_1': 8, 'judge_2': 9,
+'judge_3': 8},
+'Camila': {'judge_1': 7, 'judge_2': 7,
+'judge_3': 7},
+'Santiago': {'judge_1': 9, 'judge_2': 9,
+'judge_3': 9},
+'Lucía': {'judge_1': 8, 'judge_2': 8,
+'judge_3': 7},
+}
+}
+]
     concurso(rounds)
     
 
